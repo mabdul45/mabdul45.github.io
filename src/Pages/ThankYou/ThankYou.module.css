@@ -1,0 +1,28 @@
+.thankYou > img {
+    margin: auto;
+    width: 22rem;
+}
+
+.thankYou > .selected {
+padding: 1rem 4rem;
+border-radius: 20px;
+width: 80%;
+font-size: 1.4rem;
+background-color: hsl(216, 12%, 54%);
+color: hsl(25, 88%, 71%);
+margin: auto;
+text-align: center;
+}
+
+.thankYou > .thankYou {
+    font-size: 2.4rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.thankYou footer{
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.2;
+    color: hsl(216, 12%, 54%);
+}
