@@ -12,8 +12,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/rating-component" exact element={<Rating savedRate={savedRate} />} />
-        <Route path="/rating-component/thank-you" element={<ThankYou rate={rate} />} />
+        <Route path="/" exact element={<Rating savedRate={savedRate} />} />
+        <Route path="/thank-you" element={<ThankYou rate={rate} />} />
 
       </Routes>
 
