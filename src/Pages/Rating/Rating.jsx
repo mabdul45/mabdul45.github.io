@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 
 import starIcon from '../../images/icon-star.svg'
 import styles from './Rating.module.css'
-import RatingButtons from '../../component/RatingButton/RatingButton'
-import Card from '../../component/Card/Card'
+import RatingButtons from '../../components/RatingButton/RatingButton'
+import Card from '../../components/Card/Card'
 import { useNavigate } from 'react-router'
 
 const Rating = (props) => {
@@ -12,23 +12,12 @@ const Rating = (props) => {
     const [rateNum, setRateNum] = useState('')
     const [ErrMessage, setErrMessage] = useState()
     const navigate = useNavigate()
-    // useEffect(
-    //     () => {
-    //         if (rateNum === '') {
-    //             setErrMessage(<p style={{ color: 'orange', fontSize: '1.4rem' }}>Please Rate us</p>)
-    //         }
-    //         else {
-    //             setErrMessage('')
-    //         }
-    //     }, [])
+
     const handleClick = (e, rate) => {
         const value = e.target.value
         setActive(value)
         setRateNum(value)
-        console.log(value)
-        console.log(rate)
     }
-    console.log(rateNum, 'RATE')
 
     const handleSubmit = (e) => {
         e.preventDefault()

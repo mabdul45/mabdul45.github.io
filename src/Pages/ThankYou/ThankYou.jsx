@@ -1,4 +1,4 @@
-import Card from "../../component/Card/Card"
+import Card from "../../components/Card/Card"
 import styles from './ThankYou.module.css'
 import ThnakYouIcon from '../../images/illustration-thank-you.svg'
 
